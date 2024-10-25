@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board de Tarefas</title>
+    <!--LINK FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!--LINK ICON-->
+    <link rel="shortcut icon" href="/src/assets/icon.ico" type="image/x-icon">
+    <!--LINK CSS & JS-->
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/responsive.css">
+    <script src="/src/js/script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <!--HEADER-->
+        <header>
+            <h1>Board de tarefas</h1>
+        </header>
+        <div id="container">
+            <!--FORM-->
+            <form id="form">
+                <input id="nameTask" name="nameTask" type="text" placeholder="Nome da tarefa" required>
+                <input id="labelTask" name="Etiqueta" type="text" placeholder="Etiqueta" required>
+                <button type="submit">+</button>
+            </form>
+            <!--SECTION TASKS-->
+            <section id="boardTasksSection">
+                <ul id="todoList"></ul>
+                <hr>
+            </section>
+        </div>
+        <!--FOOTER-->
+        <footer>
+            <p>0 tarefas concluídas</p>
+        </footer>
+    </main>
+</body>
+
+</html>
